@@ -4,7 +4,7 @@ const  API_URL = '192.168.1.104:3000';
 export async function registerUser(userData: UserData): Promise<void>{
 
     try {
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 500));
         const   regResponse= await fetch(`${API_URL}/register`, {
             method: 'post',
             headers: {
